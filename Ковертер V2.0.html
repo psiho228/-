@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="rus">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Денежный конвертер</title>
+  
+    <link rel="stylesheet"
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+  
+    <link rel="preconnect" 
+          href="https://fonts.gstatic.com">
+    <link href=
+"https://fonts.googleapis.com/css2?family=Amiri&family=Lobster&family=Pacifico&display=swap" 
+          rel="stylesheet">
+  
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+  
+   
+<marquee>
+	<img src="Dollar.png" alt="Доллар" width="300" height="200" usemap="#social">
+<map name="social">
+	<area shape="rect" coords="0,0,300,200" href="https://quote.rbc.ru/ticker/59111" alt="Доллар/рубль" target="_blank">
+</map>
+<img src="euro.png" alt="Евро" width="300" height="200" usemap="#eur">
+	<map name="eur">
+	<area shape="rect" coords="0,0,300,200" href="https://quote.rbc.ru/ticker/59090" alt="Евро/рубль" target="_blank">
+	</map> 
+	<img src="Yuan.png" alt="Юань" width="300" height="200" usemap="#yuan">
+<map name="yuan">
+	<area shape="rect" coords="0,0,300,200" href="https://quote.rbc.ru/ticker/59066" alt="Юань/рубль" target="_blank">
+</map>
+	<img src="Rubl.png" alt="Рубль" width="300" height="200" usemap="#rubl">
+	<map name="rubl">
+		<area shape="rect" coords="0,0,300,200" href="https://i.ytimg.com/vi/K3Yo5YwJyfg/maxresdefault.jpg" alt="Рубль" target="_blank">
+	</map>
+</marquee>
+<div class="container">
+  
+    <div class="main">
+  
+            <div class="form-group">
+              <label for="oamount">
+                    
+                </label>
+              <input type="text" 
+                       class="form-control searchBox" 
+                       placeholder="0.00" 
+                       id="oamount">
+            </div>
+  
+            <div class="row">
+              <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Из&nbsp;</span>
+                        </div>
+                        <select class="form-control from" id="sel1">
+                            <option value="">Выбрать</option>
+                            <option value="USD">USD</option>
+                            <option value="RUB">RUB</option>
+							<option value="EUR">EUR</option>
+							<option value="CNY">CNY</option>
+                        </select>
+                    </div>
+                </div>
+  
+              <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">В&nbsp;</span>
+                        </div>
+                        <select class="form-control to" id="sel2">
+                            <option value="">Выбрать</option>
+                            <option value="USD">USD</option>
+                            <option value="RUB">RUB</option>
+							<option value="EUR">EUR</option>
+							<option value="CNY">CNY</option>
+                            
+                      </select>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="text-center">
+  
+                
+              <button onClick="click" class="btn btn-primary convert m-2" id="btn1"
+                        type="submit">
+                     Перевод
+              </button>
+  
+               
+                <button class="btn btn-primary m-2"  
+                        onclick="clearVal()">
+                   Сброс
+              </button>
+            </div>
+  
+  </div>
+  
+        <div id="finalAmount" class="text-center">
+  
+         
+            <h2>Сумма :
+                <span class="finalValue" 
+                      style="color:black;">
+           </span>
+            </h2>
+        </div>
+</div>
+  	<center><p>Музыка для денег</p>
+<audio controls id="music"  >
+	
+	<source src="Hava-nagila.ogg" type="audio/ogg; codex=vorbis" >
+	
+	</audio>
+	</center>
+	
+    
+<script src="script.js"></script>
+<script> scr="script.js"</script>
+</body>
+  
+</html>
